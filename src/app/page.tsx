@@ -73,16 +73,16 @@ export default function Home() {
 
             {/* Manifesto Section */}
             <section className='w-full py-20 px-6 md:px-10 bg-white'>
-                <div className='container mx-auto max-w-4xl'>
+                <div className='container max-w-4xl'>
                     <FadeInUp>
-                        <h2 className='text-3xl md:text-4xl font-louize mb-8 text-center'>
+                        <h2 className='text-3xl md:text-4xl font-louize mb-8'>
                             Our Manifesto
                         </h2>
                     </FadeInUp>
 
                     <div className='prose prose-lg max-w-none'>
                         <FadeInUp delay={0.1}>
-                            <p className='text-center mb-8'>
+                            <p className=' mb-8'>
                                 In a time when every company has a bid on our
                                 data, when we exchange our privacy for
                                 information, when every move we make is
@@ -92,7 +92,7 @@ export default function Home() {
                         </FadeInUp>
 
                         <FadeInUp delay={0.2}>
-                            <p className='text-center mb-8'>
+                            <p className=' mb-8'>
                                 Our minds have been taken captive by social
                                 approval systems, by newsfeeds and timelines, by
                                 advertisements and corporate agendas. Our
@@ -102,18 +102,18 @@ export default function Home() {
                         </FadeInUp>
 
                         <FadeInUp delay={0.3}>
-                            <p className='text-center font-bold mb-8'>
+                            <p className=' font-bold mb-8'>
                                 What should have never been lost is now yours
                                 again. We promise:
                             </p>
                         </FadeInUp>
 
                         <StaggerContainer
-                            className='grid grid-cols-2 md:grid-cols-3 gap-4 mb-12  justify-items-center'
+                            className='grid grid-cols-2 md:grid-cols-3 gap-4 mb-12'
                             staggerChildren={0.05}
                             delay={0.4}
                         >
-                            <StaggerItem className='flex items-center'>
+                            <StaggerItem className='flex'>
                                 <ul>
                                     <li className='list-disc'>
                                         {" "}
@@ -188,7 +188,7 @@ export default function Home() {
                     className='absolute inset-0 z-0'
                 />
 
-                <div className='container mx-auto max-w-4xl text-center relative z-10'>
+                <div className='container mx-auto max-w-4xl relative z-10'>
                     <FadeInUp>
                         <h2 className='text-3xl md:text-4xl font-louize mb-8'>
                             The first and only extension
@@ -198,7 +198,7 @@ export default function Home() {
                     </FadeInUp>
 
                     <FadeInUp delay={0.2}>
-                        <p className='text-lg mb-12 max-w-2xl mx-auto'>
+                        <p className='text-lg mb-12 max-w-2xl'>
                             One place for everything you care about. You don't
                             need to file it, label or even tag it. It's all
                             magically organized and visualized for you.
@@ -216,7 +216,7 @@ export default function Home() {
                                 personal search engine.
                             </h3>
 
-                            <p className='mb-8 max-w-2xl mx-auto'>
+                            <p className='mb-8 max-w-2xl'>
                                 Search by color, keyword, brand, date — whatever
                                 you think of first. Associative search & visual
                                 cues work with your brain to find it instantly.
