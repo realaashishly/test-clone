@@ -86,13 +86,21 @@ export default function ParallaxSection({
     triggerOnce: false,
   });
 
-  // Handle opacity and scale transforms
-  const opacityValue = opacity
-    ? useTransform(scrollYProgress, [0, 0.5], [0.3, 1])
-    : 1;
-  const scaleValue = scale
-    ? useTransform(scrollYProgress, [0, 0.5], [0.95, 1])
-    : 1;
+  // ✅ Define hooks unconditionally
+  const opacityTransform = useTransform(
+    scrollYProgress,
+    [0, 0.5],
+    [0.3, 1]
+  );
+  const scaleTransform = useTransform(
+    scrollYProgress,
+    [0, 0.5],
+    [0.95, 1]
+  );
+
+  // ✅ Use a ternary operator or variable for conditional logic
+  const opacityValue = opacity ? opacityTransform : 1;
+  const scaleValue = scale ? scaleTransform : 1;
 
   return (
     <div
