@@ -25,7 +25,7 @@ const Footer = () => {
                                 className='mr-2'
                             />
                             <span className='font-louize text-mymind-dark'>
-                                mymind
+                                Korizen
                             </span>
                         </div>
                         <p className='text-mymind-gray text-sm mb-10'>
