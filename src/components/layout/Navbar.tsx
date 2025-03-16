@@ -10,7 +10,7 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="w-full py-2 px-6 flex items-center justify-between fixed top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
+    <header className="w-full py-3 px-6 flex items-center justify-between fixed top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
       <div className="flex items-center">
         <Link href="/" className="flex items-center">
           <Image

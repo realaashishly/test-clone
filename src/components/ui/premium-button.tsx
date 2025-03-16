@@ -6,7 +6,14 @@ import { motion } from "framer-motion";
 interface PremiumButtonProps {
   children: ReactNode;
   className?: string;
-  variant?: "primary" | "secondary" | "outline" | "ghost";
+  variant?: 
+    | "primary" 
+    | "secondary" 
+    | "outline" 
+    | "ghost" 
+    | "blueGradient" 
+    | "redOrangePurpleGradient" 
+    | "neonGradient";
   size?: "sm" | "md" | "lg";
   rounded?: "full" | "lg" | "md";
   onClick?: () => void;
@@ -50,15 +57,34 @@ export function PremiumButton({
     secondary: `bg-mymind-dark text-white hover:bg-mymind-dark/90 active:bg-mymind-dark/95 shadow-lg shadow-mymind-dark/20`,
     outline: `bg-transparent border border-mymind-dark/20 text-mymind-dark hover:bg-mymind-dark/5 active:bg-mymind-dark/10`,
     ghost: `bg-transparent text-mymind-dark hover:bg-mymind-dark/5 active:bg-mymind-dark/10`,
+
+    // ✅ Blue Gradient
+    blueGradient: `bg-gradient-to-r from-[#00B2FF] to-[#0038FF] text-white 
+                   
+                   active:from-[#0098E0] active:to-[#0029CC] 
+                   shadow-lg shadow-[#00B2FF]/30`,
+
+    // ✅ Red-Orange-Purple Gradient
+    redOrangePurpleGradient: `bg-gradient-to-r from-[#784299] via-[#D52127] to-[#F6851E] text-white 
+                               hover:from-[#683290] hover:to-[#E5741D] 
+                               active:from-[#603290] active:to-[#D4641D] 
+                               shadow-lg shadow-[#D52127]/30`,
+
+    // ✅ Neon Gradient
+    neonGradient: `bg-gradient-to-r from-[#CCFF00] via-[#FF0F00] to-[#FBBD15] text-black 
+                   hover:from-[#BBEE00] hover:to-[#E0A815] 
+                   active:from-[#AAEE00] active:to-[#D0A015] 
+                   shadow-lg shadow-[#FF0F00]/30`,
   };
 
   const disabledClasses = disabled
     ? "opacity-60 cursor-not-allowed pointer-events-none"
     : "";
 
-  const baseClasses = `relative font-nunito inline-flex items-center justify-center transition-all duration-300 ease-out focus:outline-none focus:ring-2 focus:ring-primary/20 ${
-    sizeClasses[size]
-  } ${roundedClasses[rounded]} ${variantClasses[variant]} ${disabledClasses} ${className}`;
+  const baseClasses = `relative font-nunito inline-flex items-center justify-center transition-all duration-300 ease-out 
+                      focus:outline-none focus:ring-2 focus:ring-primary/20 
+                      ${sizeClasses[size]} ${roundedClasses[rounded]} 
+                      ${variantClasses[variant]} ${disabledClasses} ${className}`;
 
   const buttonContent = (
     <>

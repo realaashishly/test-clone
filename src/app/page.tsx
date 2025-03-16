@@ -91,7 +91,7 @@ export default function Home() {
                         <div className="flex flex-col md:flex-row items-start gap-4 mb-16">
                             <PremiumButton
                                 href="https://access.mymind.com/signin"
-                                variant="primary"
+                                variant="blueGradient"
                                 size="lg"
                                 icon={<Check size={16} />}
                             >
