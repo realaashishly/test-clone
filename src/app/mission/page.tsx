@@ -216,7 +216,7 @@ export default function WhyPage() {
                                 align='left'
                                 className='text-3xl md:text-4xl'
                             >
-                                Join the Beta and Shape the Future
+                                Join the Alpha and Shape the Future
                             </RichHeading>
                         </div>
                     </ParallaxSection>
@@ -224,7 +224,7 @@ export default function WhyPage() {
                     <div className='prose prose-lg max-w-none'>
                         <FadeInUp delay={0.1}>
                             <p className='mb-6'>
-                                Korizen is more than a tool—it’s a movement. By
+                                Korizen is more than a tool, it’s a movement. By
                                 joining our beta, you’ll have the opportunity to
                                 shape the future of productivity and AI.
                             </p>
@@ -239,18 +239,12 @@ export default function WhyPage() {
                             </p>
                         </FadeInUp>
 
-                        <FadeInUp delay={0.3}>
-                            <p className='mb-10'>
-                                Ready to take control of your workflow and
-                                career? Join the beta today.
-                            </p>
-                        </FadeInUp>
                     </div>
 
                     <div className='flex justify-start'>
                         <PremiumButton
                             href='/join-beta'
-                            variant='secondary'
+                            variant='blueGradient'
                             size='lg'
                             icon={<ArrowRight size={16} />}
                             iconPosition='right'

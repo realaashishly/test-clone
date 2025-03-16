@@ -237,10 +237,10 @@ export default function Home() {
                             <div className="mt-8">
                                 <PremiumButton
                                     href="#"
-                                    variant="secondary"
+                                    variant="blueGradient"
                                     size="lg"
                                 >
-                                    Sign up for free
+                                    Sign up for alpha
                                 </PremiumButton>
                             </div>
                         </StaggerItem>

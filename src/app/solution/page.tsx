@@ -261,7 +261,7 @@ export default function HowPage() {
                                                     →
                                                 </span>
                                                 <span className='text-white'>
-                                                    Create movies effortlessly
+                                                    Create amazing shots
                                                 </span>
                                             </li>
                                         </ul>
@@ -573,7 +573,7 @@ export default function HowPage() {
                     <div className='flex justify-start'>
                         <PremiumButton
                             href='/join-beta'
-                            variant='secondary'
+                            variant='blueGradient'
                             size='lg'
                             icon={<ArrowRight size={16} />}
                             iconPosition='right'

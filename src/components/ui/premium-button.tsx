@@ -102,7 +102,7 @@ export function PremiumButton({
   // Animation properties
   const buttonAnimation = {
     tap: { scale: 0.98 },
-    hover: disabled ? {} : { y: -2, boxShadow: "0 10px 15px -3px rgba(0,0,0,0.1)" },
+    hover: disabled ? {} : { y: -2, boxShadow: "0 10px 15px -3px rgba(0,178,255,0.50)" },
   };
 
   // Render as link or button based on href prop
