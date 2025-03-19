@@ -1,6 +1,5 @@
 import FadeInUp from "@/components/animations/FadeInUp";
 import ParallaxSection from "@/components/animations/ParallaxSection";
-import GradientBackground from "@/components/ui/gradient-background";
 import { PremiumButton } from "@/components/ui/premium-button";
 import { RichHeading } from "@/components/ui/rich-heading";
 import { ArrowRight } from "lucide-react";
@@ -9,14 +8,7 @@ export default function WhyPage() {
     return (
         <div className='flex flex-col items-center'>
             {/* Hero Section */}
-            <section className='w-full min-h-[80vh] relative flex flex-col items-center justify-center px-6 md:px-10 pt-24 pb-16'>
-                <GradientBackground
-                    variant='blue-purple'
-                    intensity='medium'
-                    blur='xl'
-                    className='absolute inset-0 z-0'
-                />
-
+            <section className='w-full min-h-[80vh] relative flex flex-col items-center justify-center px-6 md:px-10 pt-24 pb-16 bg-white'>
                 <div className='container mx-auto relative z-10 max-w-4xl text-left'>
                     <ParallaxSection speed={0.5} opacity={true}>
                         <RichHeading
@@ -103,15 +95,7 @@ export default function WhyPage() {
             </section>
 
             {/* Section 2: Zen Isn’t a Feature. It’s the Foundation. */}
-            <section className='w-full py-20 px-6 md:px-10 relative'>
-                <GradientBackground
-                    variant='blue-purple'
-                    intensity='light'
-                    blur='lg'
-                    pattern='dots'
-                    className='absolute inset-0 z-0'
-                />
-
+            <section className='w-full py-20 px-6 md:px-10 relative bg-white'>
                 <div className='container mx-auto relative z-10 max-w-4xl text-left'>
                     <ParallaxSection direction='up' speed={0.2}>
                         <div className='flex flex-col md:flex-row items-start mb-10'>
@@ -197,15 +181,7 @@ export default function WhyPage() {
             </section>
 
             {/* Section 4: Join the Beta */}
-            <section className='w-full py-20 px-6 md:px-10 relative'>
-                <GradientBackground
-                    variant='yellow-peach'
-                    intensity='light'
-                    blur='lg'
-                    pattern='waves'
-                    className='absolute inset-0 z-0'
-                />
-
+            <section className='w-full py-20 px-6 md:px-10 relative bg-white'>
                 <div className='container mx-auto relative z-10 max-w-4xl text-left'>
                     <ParallaxSection direction='up' speed={0.2}>
                         <div className='flex flex-col md:flex-row items-start mb-10'>
@@ -238,7 +214,6 @@ export default function WhyPage() {
                                 its users.
                             </p>
                         </FadeInUp>
-
                     </div>
 
                     <div className='flex justify-start'>

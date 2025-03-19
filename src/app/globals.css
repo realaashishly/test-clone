@@ -69,27 +69,27 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground font-inter;
+    @apply bg-white text-foreground font-inter;
   }
   h1, h2, h3, h4, h5 {
     @apply font-louize;
   }
 
   /* mymind.com gradient backgrounds */
-  .bg-gradient-orange-pink {
+  /* .bg-gradient-orange-pink {
     background: linear-gradient(120deg, #f85a24, #eba097);
-  }
+  } */
 
-  .bg-gradient-blue-purple {
+  /* .bg-gradient-blue-purple {
     background: linear-gradient(120deg, #93a4c7, #b461a6);
-  }
+  } */
 
-  .bg-gradient-yellow-peach {
+  /* .bg-gradient-yellow-peach {
     background: linear-gradient(120deg, #f6ca99, #ef9d67);
-  }
+  } */
 
   /* circular gradients */
-  .circular-gradient {
+  /* .circular-gradient {
     background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2), transparent 70%);
-  }
+  } */
 }

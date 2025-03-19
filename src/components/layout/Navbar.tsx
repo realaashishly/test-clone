@@ -31,7 +31,7 @@ const Navbar = () => {
                   href='/'
                   className='text-mymind-dark hover:text-mymind-dark/60 transition-colors font-nunito text-sm'
               >
-                  What
+                  Story
               </Link>
               <Link
                   href='/mission'
@@ -39,12 +39,12 @@ const Navbar = () => {
               >
                   Mission
               </Link>
-              <Link
+              {/* <Link
                   href='/solution'
                   className='text-mymind-dark hover:text-mymind-dark/60 transition-colors font-nunito text-sm'
               >
                   Solutions
-              </Link>
+              </Link> */}
               
           </nav>
 
