@@ -4,16 +4,15 @@ import { louize, inter, nunito } from "../styles/fonts";
 import RootLayout from "@/components/layout/RootLayout";
 
 export const metadata: Metadata = {
-  title: "mymind is the extension for your mind.",
-  description: "A private place to save your most precious notes, images, quotes and highlights. Enhanced with AI to help you remember without wasting time on categorizing & organizing.",
-  icons: {
-    icon: [
-      {
-        url: "https://ext.same-assets.com/1239943432/901201020.svg+xml",
-        href: "https://ext.same-assets.com/1239943432/901201020.svg+xml",
-      }
-    ]
-  }
+    title: "Korizen",
+    description: "",
+    icons: {
+        apple: "/apple-touch-icon.png",
+        icon: [
+            { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+            { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+        ],
+    },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

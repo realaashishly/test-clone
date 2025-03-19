@@ -9,27 +9,6 @@ const Footer = () => {
                         <div className='text-sm text-mymind-gray mb-4 md:mb-0 capitalize'>
                             © korizen, 2025
                         </div>
-
-                        <div className='flex space-x-6'>
-                            <Link
-                                href='/terms'
-                                className='text-mymind-dark hover:text-mymind-dark/60 transition-colors font-nunito text-sm'
-                            >
-                                Terms & Conditions
-                            </Link>
-                            <Link
-                                href='/privacypolicy'
-                                className='text-mymind-dark hover:text-mymind-dark/60 transition-colors font-nunito text-sm'
-                            >
-                                Privacy Policy
-                            </Link>
-                            <Link
-                                href='/faq'
-                                className='text-mymind-dark hover:text-mymind-dark/60 transition-colors font-nunito text-sm'
-                            >
-                                Contact us
-                            </Link>
-                        </div>
                     </div>
                 </div>
             </div>

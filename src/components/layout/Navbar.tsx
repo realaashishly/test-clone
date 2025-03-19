@@ -55,9 +55,11 @@ const Navbar = () => {
               >
                   Log in
               </Link> */}
+              <Link href={"/join-alpha"}>
               <Button className='bg-gradient-to-r from-[#00B2FF] to-[#0038FF] font-nunito rounded-full px-5 py-1 h-auto text-sm hidden md:inline-flex'>
                   Sign up
               </Button>
+              </Link>
 
               <MobileMenu
                   isOpen={isMobileMenuOpen}

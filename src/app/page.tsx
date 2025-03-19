@@ -27,14 +27,14 @@ const FEATURES = [
         title: "AI Art's Hidden Codes",
         description:
             "The prompts behind million of views posts? They're here. Steal the exact prompt from creators and make similar arts.",
-        imageUrl: "https://ext.same-assets.com/1591477012/3154654084.webp",
+        imageUrl: "/aiart3.png",
         imageAlt: "AI Art's Hidden Codes",
     },
     {
         title: "AI Video Hacks",
         description:
-            "Kling can't make you Spielberg. Our prompts can. Reverse-engineer how to write the perfect prompt and learn several tricks to make your videos stand out.",
-        imageUrl: "https://ext.same-assets.com/2141993859/4180095474.webp",
+            "Kling can't make you Spielberg. Our prompts can. Reverse-engineer to write the perfect prompt and learn several tricks to make your videos stand out.",
+        imageUrl: "/aiart2.png",
         imageAlt: "AI Video Hacks",
     },
 ];
@@ -81,7 +81,7 @@ export default function Home() {
 
                     <FadeInUp delay={1.2} distance={30}>
                         <p className='text-lg md:text-xl text-mymind-dark/80 mb-12 max-w-2xl text-left'>
-                            Helping the masses understand the language of the
+                            Helping the people understand the language of the
                             future and making innovation accessible.
                         </p>
                     </FadeInUp>
@@ -182,20 +182,22 @@ export default function Home() {
                                 delay={0.1 * (index + 1)}
                                 key={feature.title}
                             >
-                                <PremiumCard className='p-6 h-full flex flex-col'>
-                                    <h3 className='text-xl font-louize mb-4 text-left'>
-                                        {feature.title}
-                                    </h3>
-                                    <p className='text-mymind-dark/80 mb-6 text-left'>
-                                        {feature.description}
-                                    </p>
-                                    <div className='mt-auto'>
+                                <PremiumCard className='p-6 h-full flex flex-col min-h-[450px]'>
+                                    <div className='flex flex-col flex-grow'>
+                                        <h3 className='text-xl font-louize mb-4 text-left'>
+                                            {feature.title}
+                                        </h3>
+                                        <p className='text-mymind-dark/80 mb-6 text-left flex-grow'>
+                                            {feature.description}
+                                        </p>
+                                    </div>
+                                    <div className='mt-auto w-full'>
                                         <Image
                                             src={feature.imageUrl}
                                             alt={feature.imageAlt}
                                             width={400}
                                             height={300}
-                                            className='rounded-lg shadow-md'
+                                            className='rounded-lg shadow-md object-cover'
                                         />
                                     </div>
                                 </PremiumCard>
@@ -227,7 +229,7 @@ export default function Home() {
                         <StaggerItem>
                             <div className='mt-8'>
                                 <PremiumButton
-                                    href='#'
+                                    href='/join-alpha'
                                     variant='blueGradient'
                                     size='lg'
                                 >

@@ -85,8 +85,8 @@ export default function WhyPage() {
                                 Korizen is built to amplify your career. While
                                 85% of AI certifications are toilet paper,
                                 recruiters always love one thing: track records.
-                                Korizen helps you showcase every agent you’ve
-                                deployed and its financial impact, making your
+                                Korizen helps you showcase everything you’ve
+                                deployed and its impact, making your
                                 profile super attractive to employers.
                             </p>
                         </FadeInUp>
@@ -117,7 +117,7 @@ export default function WhyPage() {
                                 Korizen is designed to bring peace to your
                                 workflow. We believe that chaos is inevitable,
                                 but peace is a design choice. Our minimalist
-                                approach isn’t just for aesthetics—it’s for
+                                approach isn’t just for aesthetics, it’s for
                                 survival.
                             </p>
                         </FadeInUp>
@@ -133,7 +133,7 @@ export default function WhyPage() {
 
                         <FadeInUp delay={0.3}>
                             <p className='mb-10'>
-                                Korizen is more than a tool—it’s a foundation
+                                Korizen is more than a tool, it’s a foundation
                                 for a better way to work, think, and create.
                             </p>
                         </FadeInUp>
@@ -162,8 +162,7 @@ export default function WhyPage() {
                         <FadeInUp delay={0.1}>
                             <p className='mb-6'>
                                 Korizen is designed to help you stand out in a
-                                competitive job market. By showcasing your
-                                deployed agents and their financial impact,
+                                competitive job market.
                                 you’ll have a track record that recruiters can’t
                                 ignore.
                             </p>
@@ -172,7 +171,7 @@ export default function WhyPage() {
                         <FadeInUp delay={0.2}>
                             <p className='mb-10'>
                                 We’re building tools that go beyond
-                                certifications—tools that prove your expertise
+                                certifications, tools that prove your expertise
                                 and value in real-world applications.
                             </p>
                         </FadeInUp>
@@ -201,7 +200,7 @@ export default function WhyPage() {
                         <FadeInUp delay={0.1}>
                             <p className='mb-6'>
                                 Korizen is more than a tool, it’s a movement. By
-                                joining our beta, you’ll have the opportunity to
+                                joining our alpha, you’ll have the opportunity to
                                 shape the future of productivity and AI.
                             </p>
                         </FadeInUp>
@@ -210,7 +209,7 @@ export default function WhyPage() {
                             <p className='mb-6'>
                                 Your feedback will directly influence the
                                 features we build and the problems we solve.
-                                Together, we can create a tool that truly serves
+                                Together, we can create a platform that truly serves
                                 its users.
                             </p>
                         </FadeInUp>
@@ -218,7 +217,7 @@ export default function WhyPage() {
 
                     <div className='flex justify-start'>
                         <PremiumButton
-                            href='/join-beta'
+                            href='/join-alpha'
                             variant='blueGradient'
                             size='lg'
                             icon={<ArrowRight size={16} />}
