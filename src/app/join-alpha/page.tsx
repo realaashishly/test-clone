@@ -4,6 +4,7 @@ import { useState } from "react";
 export default function WaitlistSection() {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+    const [isLoading, setIsLoading] = useState(false);
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -12,6 +13,7 @@ export default function WaitlistSection() {
             return;
         }
 
+        setIsLoading(true);
         try {
             const res = await fetch("/api/waitlist", {
                 method: "POST",
@@ -29,6 +31,8 @@ export default function WaitlistSection() {
             }
         } catch (error) {
             setMessage("Failed to join the waitlist. Please try again.");
+        } finally {
+            setIsLoading(false);
         }
     };
 
@@ -61,12 +65,14 @@ export default function WaitlistSection() {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         className='px-4 py-2 w-full max-w-md rounded-md bg-gray-100 text-gray-700 outline-none border border-gray-300 focus:border-gray-500'
+                        disabled={isLoading}
                     />
                     <button
                         type='submit'
                         className='bg-gradient-to-r from-[#00B2FF] to-[#0038FF] text-white px-6 py-2 rounded-md font-medium hover:opacity-80 transition'
+                        disabled={isLoading}
                     >
-                        Join Waitlist!
+                        {isLoading ? "Joining..." : "Join Waitlist!"}
                     </button>
                 </form>
 
