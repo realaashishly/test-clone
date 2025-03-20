@@ -89,7 +89,7 @@ export default function Home() {
                     <FadeInUp delay={1.4} distance={30}>
                         <div className='flex flex-col md:flex-row items-start gap-4 mb-16'>
                             <PremiumButton
-                                href='https://access.mymind.com/signin'
+                                href='/join-alpha'
                                 variant='blueGradient'
                                 size='lg'
                                 icon={<Check size={16} />}

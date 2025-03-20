@@ -13,10 +13,20 @@ export default function WaitlistSection() {
         }
 
         try {
-            // Simulate an API call
-            await new Promise((resolve) => setTimeout(resolve, 1000));
-            setMessage("Thank you for joining the waitlist!");
-            setEmail("");
+            const res = await fetch("/api/waitlist", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ email }),
+            });
+            if (res.ok) {
+                setMessage("You’ve been added to the waitlist!");
+                setEmail("");
+            } else {
+                const data = await res.json();
+                setMessage(data.error || "Failed to join the waitlist");
+            }
         } catch (error) {
             setMessage("Failed to join the waitlist. Please try again.");
         }
