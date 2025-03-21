@@ -220,7 +220,7 @@ export default function Home() {
                         <div className='grid grid-cols-1 gap-12'>
                             <PremiumCard className='p-8 max-w-xl flex flex-col items-start bg-white shadow-md rounded-lg'>
                                 <h3 className='text-2xl font-louize mb-4 text-gray-800'>
-                                    Pro Plan - $10/month
+                                    Pro Plan - ₹ 860/month
                                 </h3>
                                 <p className='text-mymind-dark/80 mb-6 text-left'>
                                     Supercharge your creativity with premium AI
