@@ -207,6 +207,72 @@ export default function Home() {
                 </div>
             </section>
 
+            {/* Pricing Section */}
+            <section className='w-full py-20 px-6 md:px-10 bg-white'>
+                <div className='container mx-auto max-w-5xl'>
+                    <FadeInUp>
+                        <h2 className='text-3xl md:text-4xl font-louize mb-12 text-left text-gray-800'>
+                            Unlock Pro AI Services
+                        </h2>
+                    </FadeInUp>
+
+                    <FadeInUp delay={0.2}>
+                        <div className='grid grid-cols-1 gap-12'>
+                            <PremiumCard className='p-8 max-w-xl flex flex-col items-start bg-white shadow-md rounded-lg'>
+                                <h3 className='text-2xl font-louize mb-4 text-gray-800'>
+                                    Pro Plan - $10/month
+                                </h3>
+                                <p className='text-mymind-dark/80 mb-6 text-left'>
+                                    Supercharge your creativity with premium AI
+                                    tools, unlimited agent runs, and exclusive
+                                    prompts. Everything you need to stay ahead.
+                                </p>
+                                <ul className='text-mymind-dark/80 mb-8 text-left space-y-3'>
+                                    <li className='flex items-center'>
+                                        <Check
+                                            size={16}
+                                            className='mr-2 text-indigo-600'
+                                        />
+                                        Unlimited AI Agent runs
+                                    </li>
+                                    <li className='flex items-center'>
+                                        <Check
+                                            size={16}
+                                            className='mr-2 text-indigo-600'
+                                        />
+                                        Access to premium AI Art & Video prompts
+                                    </li>
+                                    <li className='flex items-center'>
+                                        <Check
+                                            size={16}
+                                            className='mr-2 text-indigo-600'
+                                        />
+                                        Priority support & updates
+                                    </li>
+                                    <li className='flex items-center'>
+                                        <Check
+                                            size={16}
+                                            className='mr-2 text-indigo-600'
+                                        />
+                                        Early access to new features
+                                    </li>
+                                </ul>
+                                <div className='mt-auto'>
+                                    <PremiumButton
+                                        href='/subscribe-pro'
+                                        variant='blueGradient'
+                                        size='lg'
+                                        icon={<Check size={16} />}
+                                    >
+                                        Get Pro for $10
+                                    </PremiumButton>
+                                </div>
+                            </PremiumCard>
+                        </div>
+                    </FadeInUp>
+                </div>
+            </section>
+
             {/* Closing CTA */}
             <section className='w-full py-20 px-6 md:px-10 relative bg-white'>
                 <div className='container mx-auto max-w-5xl relative z-10'>
