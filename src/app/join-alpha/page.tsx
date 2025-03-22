@@ -40,7 +40,7 @@ export default function WaitlistSection() {
         <div className='flex min-h-screen items-center justify-center bg-white text-black px-4'>
             <div className='text-center max-w-2xl'>
                 <p className='text-sm text-orange-500 mb-2'>
-                    🔥 Amazing korizen Resources!
+                    🔥 "Limited seats available!"
                 </p>
                 <h1 className='text-4xl font-bold mb-4'>
                     Join The Waitlist{" "}

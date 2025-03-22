@@ -264,7 +264,7 @@ export default function Home() {
                                         size='lg'
                                         icon={<Check size={16} />}
                                     >
-                                        Get Pro for $10
+                                        Get Pro for ₹ 860/month
                                     </PremiumButton>
                                 </div>
                             </PremiumCard>
