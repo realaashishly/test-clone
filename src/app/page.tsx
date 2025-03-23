@@ -208,7 +208,7 @@ export default function Home() {
             </section>
 
             {/* Pricing Section */}
-            <section className='w-full py-20 px-6 md:px-10 bg-white'>
+            {/* <section className='w-full py-20 px-6 md:px-10 bg-white'>
                 <div className='container mx-auto max-w-5xl'>
                     <FadeInUp>
                         <h2 className='text-3xl md:text-4xl font-louize mb-12 text-left text-gray-800'>
@@ -271,7 +271,7 @@ export default function Home() {
                         </div>
                     </FadeInUp>
                 </div>
-            </section>
+            </section> */}
 
             {/* Closing CTA */}
             <section className='w-full py-20 px-6 md:px-10 relative bg-white'>
