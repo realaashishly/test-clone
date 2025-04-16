@@ -20,8 +20,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
         className="md:hidden flex items-center justify-center focus:outline-none"
         onClick={toggleMenu}
         aria-expanded={isOpen}
-        aria-label="Toggle mobile menu"
-      >
+        aria-label="Toggle mobile menu">
         {isOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
 
@@ -32,15 +31,13 @@ const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
               <Link
                 href="/"
                 className="text-xl font-louize"
-                onClick={() => setIsOpen(false)}
-              >
+                onClick={() => setIsOpen(false)}>
                 Korizen
               </Link>
               <button
                 className="focus:outline-none"
                 onClick={toggleMenu}
-                aria-label="Close mobile menu"
-              >
+                aria-label="Close mobile menu">
                 <X size={24} />
               </button>
             </div>
@@ -50,17 +47,22 @@ const MobileMenu = ({ isOpen, setIsOpen }: MobileMenuProps) => {
                 <li>
                   <Link
                     href="/"
-                    className="text-mymind-dark hover:text-mymind-dark/60 transition-colors font-nunito text-sm"
-                  >
+                    className="text-mymind-dark hover:text-mymind-dark/60 transition-colors font-nunito text-sm">
                     Story
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/mission"
-                    className="text-mymind-dark hover:text-mymind-dark/60 transition-colors font-nunito text-sm"
-                  >
+                    className="text-mymind-dark hover:text-mymind-dark/60 transition-colors font-nunito text-sm">
                     Mission
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/pricing"
+                    className="text-mymind-dark hover:text-mymind-dark/60 transition-colors font-nunito text-sm">
+                    Pricing
                   </Link>
                 </li>
                 <li>

@@ -10,6 +10,7 @@ import MobileMenu from "./MobileMenu";
 const NAV_LINKS = [
   { href: "/", label: "Story" },
   { href: "/mission", label: "Mission" },
+  { href: "/pricing", label: "Pricing" },
   // { href: "/solution", label: "Solutions" },
 ];
 
@@ -45,8 +46,7 @@ const Navbar = () => {
             <Link
               key={href}
               href={href}
-              className="text-sm font-nunito text-mymind-dark transition-colors hover:text-mymind-dark/60"
-            >
+              className="text-sm font-nunito text-mymind-dark transition-colors hover:text-mymind-dark/60">
               {label}
             </Link>
           ))}
@@ -55,9 +55,7 @@ const Navbar = () => {
         {/* Right Section */}
         <div className="flex items-center space-x-4">
           <Link href="/join-alpha">
-            <Button
-              className="hidden rounded-full bg-gradient-to-r from-[#00B2FF] to-[#0038FF] px-5 py-1 text-sm font-nunito md:inline-flex"
-            >
+            <Button className="hidden rounded-full bg-gradient-to-r from-[#00B2FF] to-[#0038FF] px-5 py-1 text-sm font-nunito md:inline-flex">
               Sign up
             </Button>
           </Link>
